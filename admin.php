@@ -5,7 +5,7 @@ use \Hcode\Model\User;
 
 $app->get('/admin', function() {
     
-	User::verifyLogin();
+	User::verifyLogin(); //VERIFICA SE A PESSOA ESTÁ LOGADA!
 
 	$page = new PageAdmin();
 
